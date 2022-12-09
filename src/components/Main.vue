@@ -56,5 +56,24 @@ export default {
   z-index: -1;
   width: 100%;
 }
+.main{
+  position: relative;
+  width: 100%;
+}
+.main .imgs{
+  position: relative;
+  width: 100%;
+  /* width: 100vw; */
+  height: 253px;
+  background: blue;
+}
+.imgs img{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
 
 </style>

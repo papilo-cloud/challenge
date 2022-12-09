@@ -24,6 +24,12 @@ export default {
   text-align: center; */
   color: #2c3e50;
 }
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
 
 .mobile a.router-link-exact-active {
   color: #42b983;
