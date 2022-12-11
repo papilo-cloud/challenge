@@ -10,7 +10,7 @@
         images and capture seamlessly in one place. register to get top 
         access.
       </p>
-    </div>
+    </div> 
     <slider />
     <Main />
     <h1>Hello Woldee</h1>

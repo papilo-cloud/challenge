@@ -10,7 +10,7 @@ export default {
   components: { Header },
   
 }
-</script>
+</script> 
 <style>
 *{
   margin: 0;

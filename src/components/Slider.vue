@@ -27,6 +27,7 @@ export default {
     padding: 0;
     padding-top: 0;
     z-index: -1;
+    margin-bottom: 4em;
   }
   .imgs{
     position: relative;

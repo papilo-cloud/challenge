@@ -6,10 +6,11 @@
      </button>
     </div>
     <div class="lo">
-      ARTSY.
+      <h2>ARTSY.</h2>
     </div>
     <nav class="mobile">
-      <div>
+      <div class="mob">
+        <h2>ARTSY.</h2>
         <button class="cancel" @click="butn2">
           X
         </button>
@@ -27,7 +28,7 @@
         <li>
           <router-link to="/drops">Drops</router-link> 
         </li>
-      </ul>
+      </ul> 
     </nav>
     <div class="icons">
       A B C
@@ -56,9 +57,9 @@ export default {
     position: fixed;
     width: 100%;
     left: 0;
-    top: 0;
+    top: 0; 
     padding: 20px;
-    /* background: orangered; */
+    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,7 +79,7 @@ export default {
   display: flex;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none; 
 }
 ul li {
   margin-right: 20px;
@@ -93,20 +94,30 @@ ul li {
     height: 100%;
     left: -100%;
     background: plum;
-    /* z-index: 100000; */
-    padding: 20px;
+    padding: 20px 30px;
     text-align: left;
     transition: .3s;
   }
+  .mobile .mob{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+  .mob h2{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
   .mobile .cancel{
-    margin-bottom: 30px;
+    font-size: 30px;
   }
   .mobile ul{
     flex-direction: column;
   }
   ul li {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
   }
   .show{
     left: 0;
@@ -116,7 +127,7 @@ ul li {
   .menu{
     display: none;
   }
-  .mobile .cancel{
+  .mobile .mob{
     display: none;
   }
 }
