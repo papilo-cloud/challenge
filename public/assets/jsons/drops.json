@@ -1,0 +1,46 @@
+[
+  {
+    "id": "d1",
+    "title": "eyo: eko for show",
+    "creator": "aliya minat",
+    "date": {
+      "day": 21,
+      "month": "november",
+      "time": "11am",
+      "timezone": "WAT"
+    }
+  },
+  {
+    "id": "d2",
+    "title": "ginger suburbs",
+    "creator": "tina benson",
+    "date": {
+      "day": 21,
+      "month": "november",
+      "time": "11am",
+      "timezone": "WAT"
+    }
+  },
+  {
+    "id": "d3",
+    "title": "sink",
+    "creator": "aliya minat",
+    "date": {
+      "day": 21,
+      "month": "november",
+      "time": "11am",
+      "timezone": "WAT"
+    }
+  },
+  {
+    "id": "d4",
+    "title": "warped '99",
+    "creator": "aliya minat",
+    "date": {
+      "day": 21,
+      "month": "november",
+      "time": "11am",
+      "timezone": "WAT"
+    }
+  }
+]

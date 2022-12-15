@@ -1,7 +1,7 @@
 <template>
   <div class="aucn">
     <p>here's an overiew of products actively on auction, explore </p>
-    <Slider2 />
+    <!-- <Slider2 /> -->
     <auct />
   </div>
 </template>

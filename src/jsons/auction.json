@@ -1,0 +1,56 @@
+{
+  "products": [
+    {
+      "id": "0",
+      "url": "./assets/Rectangle247.png"
+    },
+    {
+      "id": "1",
+      "url": "./assets/Rectangle245.png"
+    },
+    {
+      "id": "2",
+      "url": "./assets/Rectangle246.png"
+    }
+  ],
+  "bids": [
+    {
+      "id": "ab1",
+      "name": "out of the box",
+      "creator": "dan murray",
+      "date": {
+        "day": 12,
+        "month": 8,
+        "year": 22
+      },
+      "bid": {
+        "current": {
+          "eth": 0.987
+        },
+        "highest": {
+          "eth": 0.57
+        }
+      },
+      "url": "./assets/photo-1.jpg"
+    },
+    {
+      "id": "ab1",
+      "name": "falling apart",
+      "creator": "jacob banks",
+      "date": {
+        "day": 12,
+        "month": 8,
+        "year": 22
+      },
+      "bid": {
+        "current": {
+          "eth": 0.99
+        },
+        "highest": {
+          "eth": 0.34
+        }
+      },
+      "url": "./assets/photos.jpg"
+    }
+  ]
+}
