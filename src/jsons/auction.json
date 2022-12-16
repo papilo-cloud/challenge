@@ -16,8 +16,8 @@
   "bids": [
     {
       "id": "ab1",
-      "name": "out of the box",
-      "creator": "dan murray",
+      "name": "Out of the box",
+      "creator": "Dan Murray",
       "date": {
         "day": 12,
         "month": 8,
@@ -35,8 +35,8 @@
     },
     {
       "id": "ab1",
-      "name": "falling apart",
-      "creator": "jacob banks",
+      "name": "Falling apart",
+      "creator": "Jacob Banks",
       "date": {
         "day": 12,
         "month": 8,

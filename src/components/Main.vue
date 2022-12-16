@@ -94,7 +94,7 @@ export default {
 .bdy .h2{
   padding: 17px;
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
   .bdy{
     padding: 3em;
   }

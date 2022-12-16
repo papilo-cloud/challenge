@@ -85,7 +85,7 @@ ul li {
   margin-right: 20px;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .mobile{
     /* display: none; */
     position: fixed;
@@ -123,7 +123,7 @@ ul li {
     left: 0;
   }
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
   .menu{
     display: none;
   }
