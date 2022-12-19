@@ -5,7 +5,6 @@
         Photography is poetry and beautiful untold stories
       </h1>
       <p>
-        <!-- r t t g f v  -->
         flip through more than 10,000 vintage shots old Photography, historic 
         images and capture seamlessly in one place. register to get top 
         access.

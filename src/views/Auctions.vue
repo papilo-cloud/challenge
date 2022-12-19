@@ -1,7 +1,6 @@
 <template>
   <div class="aucn">
-    <p>here's an overiew of products actively on auction, explore </p>
-    <!-- <Slider2 /> -->
+    <Slider2 />
     <auct />
   </div>
 </template>
@@ -18,7 +17,7 @@ export default {
 <style scoped>
   .aucn{
     position: relative;
-    margin-top: 4em;
+    margin-top: 7em;
     z-index: -1;
   }
   

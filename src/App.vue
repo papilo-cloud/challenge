@@ -8,7 +8,12 @@
 import Header from './components/Header.vue'
 export default {
   components: { Header },
-  
+  beforeCreate() {
+      this.$store.commit('loadStore');
+	},
+  mounted() {
+    console.log(this.$store.getters.getDrops)
+  }
 }
 </script> 
 <style>

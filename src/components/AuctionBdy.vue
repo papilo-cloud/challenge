@@ -1,6 +1,6 @@
 <template>
   <div class="aucbdy">
-    <p>top bid from popular creators</p>
+    <p>Top bid from popular creators</p>
     <div class="bom">
       <div class="image-box" v-for="(img, i) in slider.bids " :key="i">
         <div class="image">
@@ -30,7 +30,7 @@
        
     </div>
   </div>
-</template>
+</template> 
 
 <script>
 import imgs from '../jsons/auction.json'
@@ -49,6 +49,11 @@ export default {
     position: relative;
     width: 100%;
     padding: 0;
+  }
+  .aucbdy p{
+    padding: 7px;
+    margin-bottom: 1.4em;
+    font-weight: 600;
   }
   .bom{
     position: relative;

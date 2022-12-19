@@ -6,7 +6,7 @@
     },
     {
       "id": "1",
-      "url": "./assets/Rectangle245.png"
+      "url": "./assets/Rectangle245.png" 
     },
     {
       "id": "2",
@@ -18,6 +18,7 @@
       "id": "ab1",
       "name": "Out of the box",
       "creator": "Dan Murray",
+      "like": false,
       "date": {
         "day": 12,
         "month": 8,
@@ -37,6 +38,7 @@
       "id": "ab1",
       "name": "Falling apart",
       "creator": "Jacob Banks",
+      "like": true,
       "date": {
         "day": 12,
         "month": 8,

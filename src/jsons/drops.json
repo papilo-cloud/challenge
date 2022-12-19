@@ -3,6 +3,7 @@
     "id": "d1",
     "title": "eyo: eko for show",
     "creator": "aliya minat",
+    "url": "./assets/eyo.jpg",
     "date": {
       "day": 21,
       "month": "november",
@@ -10,10 +11,11 @@
       "timezone": "WAT"
     }
   },
-  {
+  { 
     "id": "d2",
     "title": "ginger suburbs",
     "creator": "tina benson",
+    "url": "./assets/ginger.jpg",
     "date": {
       "day": 21,
       "month": "november",
@@ -25,6 +27,7 @@
     "id": "d3",
     "title": "sink",
     "creator": "aliya minat",
+    "url": "./assets/sink.jpg",
     "date": {
       "day": 21,
       "month": "november",
@@ -36,6 +39,7 @@
     "id": "d4",
     "title": "warped '99",
     "creator": "aliya minat",
+    "url": "./assets/warped.jpg",
     "date": {
       "day": 21,
       "month": "november",

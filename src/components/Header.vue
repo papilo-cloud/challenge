@@ -6,7 +6,7 @@
      </button>
     </div>
     <div class="lo">
-      <h2>ARTSY.</h2>
+      <h2>ARTSY.</h2> 
     </div>
     <nav class="mobile">
       <div class="mob">
