@@ -2,6 +2,7 @@
   {
     "id": "d1",
     "title": "eyo: eko for show",
+    "session": "upcoming",
     "creator": "aliya minat",
     "url": "./assets/eyo.jpg",
     "date": {
@@ -14,6 +15,7 @@
   { 
     "id": "d2",
     "title": "ginger suburbs",
+    "session": "live now",
     "creator": "tina benson",
     "url": "./assets/ginger.jpg",
     "date": {
@@ -26,6 +28,7 @@
   {
     "id": "d3",
     "title": "sink",
+    "session": "ended",
     "creator": "aliya minat",
     "url": "./assets/sink.jpg",
     "date": {
@@ -38,6 +41,7 @@
   {
     "id": "d4",
     "title": "warped '99",
+    "session": "ended",
     "creator": "aliya minat",
     "url": "./assets/warped.jpg",
     "date": {

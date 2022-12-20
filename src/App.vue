@@ -14,7 +14,7 @@ export default {
   mounted() {
     console.log(this.$store.getters.getDrops)
   }
-}
+} 
 </script> 
 <style>
 *{
