@@ -12,7 +12,7 @@
     </div> 
     <slider />
     <Main />
-    <h1>Hello Woldee</h1>
+    <news-letter />
   </div>
 </template>
 
@@ -21,10 +21,11 @@
 
 import Main from '@/components/Main.vue';
 import Slider from '../components/Slider.vue';
+import NewsLetter from '../components/NewsLetter.vue';
 
 export default {
     name: "HomeView",
-    components: { Main, Slider },
+    components: { Main, Slider, NewsLetter },
 }
 </script>
 <style scoped>

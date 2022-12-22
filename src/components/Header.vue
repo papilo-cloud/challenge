@@ -2,7 +2,7 @@
   <header class="head">
     <div class="menu">
      <button class="btn" @click="butn1">
-      |||
+      <img src="../assets/icon-menu.svg" alt="menu">
      </button>
     </div>
     <div class="lo">
@@ -14,7 +14,7 @@
         <button class="cancel" @click="butn2">
           X
         </button>
-      </div>
+      </div> 
       <ul>
         <li>
           <router-link to="/">Home</router-link>
@@ -31,7 +31,8 @@
       </ul> 
     </nav>
     <div class="icons">
-      A B C
+      <button><img src="../assets/icon-search.svg" alt="search"></button>
+      <button><img src="../assets/icon-cart.svg" alt="cart"></button>
     </div>
   </header>
 </template>
@@ -69,21 +70,34 @@ export default {
     z-index: 1000;
   }
   .mobile a {
-  font-weight: bold;
-  color: #2c3e50;
-  text-decoration: none;
-  /* z-index: 100; */
-}
-.mobile ul{
-  position: relative;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none; 
-}
-ul li {
-  margin-right: 20px;
-}
+    position: relative;
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+    /* z-index: 100; */
+  }
+  .mobile ul{
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+  }
+  ul li {
+    margin-right: 20px;
+  }
+  .mobile a.router-link-exact-active::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1.1px;
+    left: 0;
+    bottom: -4px;
+    background: #2c3e50;
+  }
+  /* .mobile a {
+    color: #42b983;
+  } */
 
 @media screen and (max-width: 768px) {
   .mobile{

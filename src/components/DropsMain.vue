@@ -30,6 +30,9 @@
             <a href="#">{{ data.session == 'upcoming'? 'get notified' : data.session =='live now'? 'join now' : 'view' }}</a>
         </div>
     </div>
+    <div class="bun">
+        <button>see more</button>
+    </div>
   </div>
 </template>
 
@@ -57,6 +60,18 @@ export default {
         position: relative;
         display: grid;
         margin-bottom: 1em;
+    }
+    .drops .bun{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+    .drops .bun button{
+        padding: 12px 3em;
+        border: 1px solid;
+        cursor: pointer;
     }
     .pic{
         position: relative;
@@ -153,7 +168,7 @@ export default {
   @media screen and (min-width: 768px) {
     .bdy{
         grid-template-columns: 1.4fr 1fr ;
-        column-gap: 1.4em;
+        column-gap: 2em;
         margin-bottom: 4em;
     }
     .main{

@@ -71,6 +71,11 @@ export default {
       height: 249px;
     }
   }
+@media screen and (min-width: 768px) {
+  .slide{
+      padding: 0 4.9em;
+    }
+}
 </style>
 <!-- 
 <template>

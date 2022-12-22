@@ -169,4 +169,9 @@ export default {
     display: unset;
   }
 }
+@media screen and (min-width: 768px) {
+  .aucbdy{
+    padding: 4.9em;
+  }
+}
 </style> 

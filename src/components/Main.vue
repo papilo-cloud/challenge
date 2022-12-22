@@ -127,13 +127,13 @@ export default {
     left: 0;
   }
 }
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1000px) {
   .main{
     padding: 3em 0;
     column-gap: 30px;
   }
   .bdy{
-    padding: 4em;
+    padding: 4.9em;
   }
 }
 
