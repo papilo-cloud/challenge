@@ -8,16 +8,17 @@
       </button>
     </div>
     <drops-main />
+    <news-letter />
   </div>
 </template>
 <script>
 import DropsMain from '../components/DropsMain.vue'
+import NewsLetter from '../components/NewsLetter.vue'
 export default {
-  components: { DropsMain },
+  components: { DropsMain, NewsLetter },
   
 }
 </script>
-        <!-- r t t g f v  -->
   <style scoped>
     .drops{
       /* margin-top: 4.9fr; */
@@ -33,6 +34,7 @@ export default {
       text-align: center;
       margin: 0;
       padding: 0;
+      margin-bottom: 3em;
     }
     .drop h2{
       margin-bottom: 1em;

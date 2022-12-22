@@ -1,54 +1,66 @@
 [
   {
     "id": "d1",
-    "title": "eyo: eko for show",
+    "title": "Eyo: Eko for show",
     "session": "upcoming",
-    "creator": "aliya minat",
+    "creator": "Aliya Minat",
     "url": "./assets/eyo.jpg",
     "date": {
       "day": 21,
       "month": "november",
       "time": "11am",
       "timezone": "WAT"
+    },
+    "timeremaining": {
+      "hrs": "06 hrs: 47 min: 22 s"
     }
   },
   { 
     "id": "d2",
     "title": "ginger suburbs",
     "session": "live now",
-    "creator": "tina benson",
+    "creator": "Tina Benson",
     "url": "./assets/ginger.jpg",
     "date": {
       "day": 21,
       "month": "november",
       "time": "11am",
       "timezone": "WAT"
+    },
+     "timeremaining": {
+      "hrs": "06 hrs: 47 min: 22 s"
     }
   },
   {
     "id": "d3",
-    "title": "sink",
+    "title": "Sink",
     "session": "ended",
-    "creator": "aliya minat",
+    "creator": "Aliya Minat",
     "url": "./assets/sink.jpg",
     "date": {
       "day": 21,
       "month": "november",
       "time": "11am",
       "timezone": "WAT"
+    },
+     "timeremaining": {
+      "hrs": "02 hours ago"
     }
   },
   {
     "id": "d4",
-    "title": "warped '99",
+    "title": "Warped '99",
     "session": "ended",
-    "creator": "aliya minat",
+    "creator": "Aliya Minat",
     "url": "./assets/warped.jpg",
     "date": {
       "day": 21,
       "month": "november",
       "time": "11am",
       "timezone": "WAT"
+    },
+     "timeremaining": {
+      "hrs": "06 hours ago"
     }
   }
 ]

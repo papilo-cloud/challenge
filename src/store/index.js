@@ -12,7 +12,7 @@ export default createStore({
   },
   mutations: {
     loadStore(state) {
-			if(localStorage.getItem('stor')) {
+			if(localStorage.getItem('sto')) {
         this.replaceState(
         Object.assign(state, JSON.parse(localStorage.getItem('store'))));
       }
