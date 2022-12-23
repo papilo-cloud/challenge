@@ -118,7 +118,7 @@ export default {
     padding: 17px 0;
   }
   .bdy .h2::before,  .main::before{
-    position: absolute;
+    position: absolute; 
     content: '';
     width: 100%;
     height: 1px;

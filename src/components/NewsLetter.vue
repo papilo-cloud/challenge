@@ -9,7 +9,6 @@
       </div>
    </main>
    <footer>
-        <!-- r t t g f v  -->
       <div class="desk">
         <h2>ARTSY.</h2>
         <ul>
