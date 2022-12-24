@@ -15,7 +15,8 @@
             est corrupti
         </p>
         <div class="bom">
-          <h1> 74 major creators</h1>
+          <h3> 74 major creators</h3>
+          <span>&rarr;</span>
         </div>
       </div>
     </div>
@@ -31,7 +32,8 @@
             est corrupti
         </p>
         <div class="bom">
-          <h1> 74 major creators</h1>
+          <h3> 74 major creators</h3>
+          <span>&rarr;</span>
         </div>
       </div>
     </div>
@@ -47,7 +49,8 @@
             est corrupti
         </p>
         <div class="bom">
-          <h1> 74 major creators</h1>
+          <h3> 74 major creators</h3>
+          <span>&rarr;</span>
         </div>
       </div>
     </div>

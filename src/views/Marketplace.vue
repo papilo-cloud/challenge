@@ -1,6 +1,22 @@
 <template>
     <div class="about">
-      <h1>This is a Make page</h1>
+      <div class="head">
+        <marketplace-aside />
+      </div>
+        <marketplace-body />
     </div>
   </template>
-   
+  <script>
+import MarketplaceAside from '../components/MarketplaceAside.vue'
+import MarketplaceBody from '../components/MarketplaceBody.vue'
+  export default {
+  components: { MarketplaceBody, MarketplaceAside },
+    
+  }
+  </script>
+   <style scoped>
+    .about{
+      margin-top: 4.99em;
+    }
+  
+   </style>

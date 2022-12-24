@@ -12,12 +12,12 @@ export default {
       this.$store.commit('loadStore');
 	},
   mounted() {
-    console.log(this.$store.getters.getDrops)
+    console.log(this.$store.getters.getProducts)
   }
 } 
 </script> 
 <style>
-*{
+*{ 
   margin: 0;
   padding: 0;
   box-sizing: border-box;

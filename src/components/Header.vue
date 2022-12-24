@@ -64,6 +64,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10000000;
   }
   .mobile{
     position: relative;

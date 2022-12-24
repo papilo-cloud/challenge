@@ -9,7 +9,7 @@
       </div>
    </main>
    <footer>
-      <div class="desk">
+      <div class="desk"> 
         <h2>ARTSY.</h2>
         <ul>
         <li>
@@ -61,6 +61,7 @@ export default {
     width: 100%;
     margin: 0;
     padding: 7px;
+    /* z-index: -1; */
   }
   .news main{
     position: relative;
