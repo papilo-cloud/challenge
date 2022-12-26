@@ -11,9 +11,6 @@ export default {
   beforeCreate() {
       this.$store.commit('loadStore');
 	},
-  mounted() {
-    console.log(this.$store.getters.getProducts)
-  }
 } 
 </script> 
 <style>

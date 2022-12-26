@@ -1,11 +1,16 @@
 <template>
   <div class="main-bdy">
-      <div class="results"><button @click="() => {$store.state.show = !$store.state.show}"
-        >filters <img src="../assets/icon-arrow-down.svg" alt=""></button><p>Showing 1 - {{ myProducts.length }} of {{$store.getters.getProducts.length}}</p> <button>sort by <img src="../assets/icon-arrow-down.svg" alt=""></button></div>
+      <div class="results">
+        <button @click="() => {$store.state.show1 = !$store.state.show1}">filters <img src="../assets/icon-arrow-down.svg" alt=""></button>
+        <p>Showing 1 - {{ myProducts.length }} of {{$store.getters.getProducts.length}}</p> 
+        <button @click="() => {$store.state.show2 = !$store.state.show2}">sort by <img src="../assets/icon-arrow-down.svg" alt=""></button>
+      </div>
     <div class="main">
       <div class="pic" v-for="product in myProducts" :key="product.id">
         <div class="img">
-          <img :src="product.url" :alt="product.id">
+          <router-link :to="{ name: 'ProductDetails', params: { name: product.name } }">
+            <img :src="product.url" :alt="product.id">
+          </router-link>
         </div>
         <div class="msg">
           <p>{{ product.name }}</p>
@@ -32,6 +37,7 @@ export default {
   computed: {
     myProducts() {
       return this.$store.getters.getProducts.slice(0,this.more)
+      // return this.prices()
     }
   },
   methods: {
@@ -46,8 +52,38 @@ export default {
           // console.log(dell.className) 
         }
         return  this.more += 4;
-      }
+      },
+      // views() {
+      //   const len = this.$store.getters.getProducts
+      //   items.sort(function (a, b) {
+      //     return b.price.usd - a.price.usd;
+      //   });
+      // },
+      // prices() {
+      //   const len = this.$store.getters.getProducts
+      //   items.sort(function (a, b) {
+      //     return b.views - a.views;
+      //   });
+      // }
+     
   },
+  mounted() {
+    const len = this.$store.getters.getProducts
+   
+    // len.sort(function (a, b) {
+		// 	let A = a.name
+		// 	let B = b.name;
+		// 	if (A < B) {
+		// 		return -1;
+		// 	}
+		// 	if (A > B) {
+		// 		return 1;
+		// 	}
+		// 	return 0;
+		// });
+		// console.log(len)
+		// console.log(items)
+  }
  
 };
 </script>

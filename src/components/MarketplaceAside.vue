@@ -1,14 +1,12 @@
 <template>
-  <div class="aside"
-  v-if="$store.state.show || width"
-   >
+  <div class="aside" :class="{'side':$store.state.show1}" >
     <div class="inp">
       <button><img src="../assets/icon-search.svg" alt=""> Search</button>
     </div>
     <div class="filter">
       <p>filters</p>
       <div class="dsk">
-        <button class="arrow"> By Category <img src="../assets/icon-arrow-down.svg" alt="arrow-down"></button>
+        <button @click="open(0)" class="arrow"> By Category <img src="../assets/icon-arrow-down.svg" alt="arrow-down"></button>
 
        <div  class="asses category">
         <label for="all">
@@ -25,7 +23,7 @@
        
       </div>
       <div class="dsk">
-        <button class="arrow">By Price <img class="shows" src="../assets/icon-arrow-down.svg" alt="arrow-down"></button>
+        <button @click="open(1)" class="arrow">By Price <img src="../assets/icon-arrow-down.svg" alt="arrow-down"></button>
         <div  class="asses price">
           <label for="all">
             <input type="radio" name="bunn" v-model="pick" value="all" id="all"> all
@@ -40,7 +38,7 @@
         </div>
       </div>
       <div class="dsk">
-        <button class="arrow">By Artist <img src="../assets/icon-arrow-down.svg" alt="arrow-down"></button>
+        <button @click="open(2)" class="arrow">By Artist <img src="../assets/icon-arrow-down.svg" alt="arrow-down"></button>
         <div  class="asses artist">
         <div v-for="(artist, x) in artists" :key="x">
           <label :for="artist">
@@ -51,7 +49,7 @@
         </div>
       </div>
       <div class="dsk">
-        <button class="arrow">By year <img src="../assets/icon-arrow-down.svg" alt="arrow-down"></button>
+        <button @click="open(3)" class="arrow">By year <img src="../assets/icon-arrow-down.svg" alt="arrow-down"></button>
           <div  class="asses year">
             <div v-for="(year, j ) in years" :key="j">
               <label :for="year">
@@ -60,6 +58,7 @@
               </label>
             </div>
           </div>
+          <!-- <product-details /> -->
       </div>
     </div>
         <!-- r t t g f v  -->
@@ -74,10 +73,6 @@ export default {
   },
 
   computed: {
-    width(){
-      const x = window.innerWidth
-      return x > 1000
-    },
     categories() {
       const category = this.$store.getters.getProduct
       const x = category.map(cat => cat.category)
@@ -92,8 +87,7 @@ export default {
 
     },
     years() {
-      const y =  this.$store.state.pick = this.pick
-      console.log(y)
+      this.$store.state.pick = this.pick
       const year = this.$store.getters.getProduct
       const x = year.map(cat => cat.year)
       const xx = [...new Set(x)]
@@ -106,23 +100,13 @@ export default {
       return xx
     }
   },
-  mounted(){
-    const category = this.$store.getters.getProduct
-      const x = category.map(cat => cat.category)
-      const xx = [...new Set(x)]
- 
-      const bom = document.getElementsByClassName('arrow')
+  methods: {
+    open(idx) {
+      const element = document.getElementsByClassName('arrow')
+      element[idx].nextSibling.classList.toggle('bom')   
+      element[idx].lastChild.classList.toggle('show')
 
-      for (let i = 0; i < bom.length; i++) {
-        const element = bom[i];
-        element.addEventListener('click', () =>{
-          if(element){
-            element.lastChild.classList.toggle('show')
-            element.nextSibling.classList.toggle('bom')
-          }
-        })
-      }
-      
+    }
   }
 }
 </script>
@@ -162,14 +146,13 @@ export default {
     font-weight: 600;
     z-index: 1;
   }
-  .dsk .arrow .xxx{
+  .dsk .arrow img{
     margin-left: 1em;
-    /* transform: rotateX(180deg); */
+    /* transform: rotate(180deg); */
     /* transform: rotateX(0); */
   }
-  .dsk .arrow .shows{
-    transform: rotateX(0);
-    transform: rotateX(180deg);
+  .show{
+    transform: rotate(180deg);
   }
   .asses{
       position: relative;
@@ -232,10 +215,14 @@ export default {
       border-radius: 10px;
       box-shadow: 3px 3px 20px #ccc;
       /* padding: 20px; */
+      display: none;
       z-index: 1;
       left: 8px;
       top: 230px;
       /* transition: .4s; */
+    }
+    .side{
+      display: unset;
     }
     .asd{
       padding: 20px;

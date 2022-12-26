@@ -7,7 +7,8 @@ export default createStore({
     drops: [data],
     products: [data1],
     pick: 'all',
-    show: false
+    show1: !true,
+    show2: !true,
   },
   getters: {
     getDrops(state) {
@@ -17,11 +18,7 @@ export default createStore({
       return state.products[0].products
     },
     getProducts(state) {
-      const y = state.products[0].products.filter(sx => sx.category.includes('Nature')).sort((a, b) => {
-        a.name - b.name})
-          console.log( y)
-          if (state.pick == 'all') {
-        // console.log( state.products[0].products)
+      if (state.pick == 'all') {
         return state.products[0].products
       }
         return state.products[0].products.filter(task => task.category.includes(state.pick) || 
@@ -30,13 +27,19 @@ export default createStore({
   },
   mutations: {
     loadStore(state) {
-			if(localStorage.getItem('st')) {
+			if(localStorage.getItem('stooo')) {
         this.replaceState(
         Object.assign(state, JSON.parse(localStorage.getItem('stor'))));
       }
 		},
+    SHOW_SIDE(state, payload){
+      state.show1 = payload
+    },
   },
   actions: {
+    showSide(context, payload){
+      context.commit('SHOW_SIDE',payload)
+    }
   },
   modules: {
   }

@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import Marketplace from '../views/Marketplace.vue'
 import Auctions from '../views/Auctions.vue'
 import Drops from '../views/Drops.vue'
+import ProductDetails from '../components/ProductDetails.vue'
 
 const routes = [
   {
@@ -14,6 +15,11 @@ const routes = [
     path: '/marketplace',
     name: 'Marketplace',
     component: Marketplace
+  },
+  {
+    path: '/marketplace/:name',
+    name:'ProductDetails',
+    component: ProductDetails
   },
   {
     path: '/auctions',

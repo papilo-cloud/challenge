@@ -3,6 +3,7 @@
     <div class="about">
       <div class="head">
         <marketplace-aside />
+        <sort />
       </div>
         <marketplace-body />
     </div>
@@ -13,8 +14,9 @@
 import MarketplaceAside from '../components/MarketplaceAside.vue'
 import MarketplaceBody from '../components/MarketplaceBody.vue'
 import NewsLetter from '../components/NewsLetter.vue'
+import Sort from '../components/Sort.vue'
   export default {
-  components: { MarketplaceBody, MarketplaceAside, NewsLetter },
+  components: { MarketplaceBody, MarketplaceAside, NewsLetter, Sort },
     
   }
   </script>
