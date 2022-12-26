@@ -1,8 +1,9 @@
 <template>
   <div class="main-bdy">
-      <div class="results"><p>see 1 - 7 of 17 results</p> <button>sort by</button></div>
+      <div class="results"><button @click="() => {$store.state.show = !$store.state.show}"
+        >filters <img src="../assets/icon-arrow-down.svg" alt=""></button><p>Showing 1 - {{ myProducts.length }} of {{$store.getters.getProducts.length}}</p> <button>sort by <img src="../assets/icon-arrow-down.svg" alt=""></button></div>
     <div class="main">
-      <div class="pic" v-for="product in products.products" :key="product.id">
+      <div class="pic" v-for="product in myProducts" :key="product.id">
         <div class="img">
           <img :src="product.url" :alt="product.id">
         </div>
@@ -12,16 +13,42 @@
         </div>
       </div>
     </div>
+    <div class="bun">
+      <button @click="seeMore(8)">See more</button>
+    </div>
   </div>
 </template>
 <script>
-export default { 
+import NewsLetter from './NewsLetter.vue';
+export default {
+  components: { NewsLetter }, 
  
   data() {
     return {
-      products: this.$store.getters.getProducts
+      more: 3,
+      // products: this.$store.getters.getProducts.products.slice(0,this.more),
     };
   },
+  computed: {
+    myProducts() {
+      return this.$store.getters.getProducts.slice(0,this.more)
+    }
+  },
+  methods: {
+      seeMore(pos) {
+        const len = this.$store.getters.getProducts.length
+        const sub = len - this.myProducts.length 
+        if(sub < 4){
+          return  this.more += sub;
+        }
+        if(this.more == len){
+          const dell = document.getElementsByClassName('bun')[0].classList.add('del')
+          // console.log(dell.className) 
+        }
+        return  this.more += 4;
+      }
+  },
+ 
 };
 </script>
 <style scoped>
@@ -30,27 +57,46 @@ export default {
     padding: 7px;
     margin: 0;
   }
+  .main-bdy .bun{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 2em 0;
+  }
+  .bun button{
+    padding: 12px 24px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 17px;
+  }
+  .del{
+    display: none;
+  }
   .results{
     position: relative;
     margin-bottom: 4.9em;
     width: 100%;
     box-shadow: 3px 3px 18px #ccc;
     border-radius: 7px;
-    padding: 10px 20px;
+    padding: 10px 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .results button{
-    padding: 10px 24px;
-    border: 1px solid #ccc;
+    padding: 10px 14px;
     border-radius: 7px;
+    text-transform: capitalize;
+  }
+  .results button img{
+    margin-left: 10px;
   }
   .main{
     position: relative;
     display: grid;
     gap: 2em;
     width: 100%;
+    margin-bottom: 4em;
   }
   .main .pic{
     position: relative;
@@ -85,6 +131,20 @@ export default {
     font-size: 14px;
     bottom: 0;
   }
+  @media screen and (min-width: 568px) {
+  .main {
+    grid-template-columns: 1fr 1fr ;
+    gap: 3em;
+  }
+}
+@media screen and (max-width: 1000px) {
+ .results p{
+  position: absolute;
+  /* transform: translateX(-50%); */
+  left: 0;
+  top: -30px;
+ }
+}
 @media screen and (min-width: 768px) {
   .main {
     grid-template-columns: 1fr 1fr 1fr ;
@@ -103,10 +163,22 @@ export default {
   .main .pic .msg p:nth-child(2){
     font-weight: 600;
   }
+  .results{
+    padding: 10px 24px;
+  }
+  .results button{
+    border: 1px solid #ccc;
+  }
+  
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 1000px) {
   .main{
     gap: 3em;
   }
+  .results button:nth-child(1){
+    display: none;
+  }
 }
+
 </style>
