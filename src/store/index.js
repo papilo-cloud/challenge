@@ -11,11 +11,11 @@ export default createStore({
     show2: !true,
   },
   getters: {
-    getDrops(state) {
+    getDrops(state) { 
       return state.drops 
     },
     getProduct(state) {
-      return state.products[0].products
+      return state.products[0]
     },
     getProducts(state) {
       if (state.pick == 'all') {
@@ -27,7 +27,7 @@ export default createStore({
   },
   mutations: {
     loadStore(state) {
-			if(localStorage.getItem('stooo')) {
+			if(localStorage.getItem('stppp')) {
         this.replaceState(
         Object.assign(state, JSON.parse(localStorage.getItem('stor'))));
       }

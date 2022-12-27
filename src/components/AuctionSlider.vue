@@ -1,28 +1,28 @@
 <template>
   <section class="slide">
     <p>Here's an overiew of products actively on auction, explore! </p>
-  <Splide :options="options" class="splide">
-    <SplideSlide v-for="(img, i) in slider.products " :key="i">
-      <img :src="img.url" :alt="img.id">
-    </SplideSlide>
-  </Splide>
+    <Splide :options="options" class="splide">
+      <SplideSlide v-for="(img, i) in slide.products " :key="i">
+        <img :src="img.url" :alt="img.id">
+      </SplideSlide>
+    </Splide>
   </section>
 </template>
 
-<script>
+<script>  
 import imgs from '../jsons/auction.json'
 import '@splidejs/vue-splide/css';
-import { SplideSlide } from '@splidejs/vue-splide';
+
 export default {
     data() {
         return {
-            slider: imgs,
+            slide: imgs,
             options: {
               rewind: true,
               gap : '1rem',
               // height : '18rem',
               autoplay:true ,
-              // pagination: false ,
+              pagination: false ,
               drag: true,
               type: 'loop',
               perPage: 2,
@@ -39,9 +39,8 @@ export default {
         };
     },
     mounted() {
-        console.log(this.slider.bids);
+        // console.log(this.slider.bids);
     },
-    components: { SplideSlide }
 }
 </script>
  

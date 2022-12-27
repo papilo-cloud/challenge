@@ -3,53 +3,27 @@
     <div class="h2">
      <h2>Featured  products</h2>
     </div>
-    <div class="main main1">
+    <div class="main main1" v-for="category in categories" :key="category.id">
+
       <div class="imgs">
-        <img src="../assets/Rectangle236.png" alt="">
+        <router-link :to="{ name: 'ProductDetails', params: { name: category.name } }">
+          <img :src="category.url" :alt="category.id">
+          <div class="oppac">
+            <h2>{{ category.name }}</h2>
+            <button>&rarr;</button>
+          </div>
+        </router-link>
       </div>
+
       <div class="exp">
-        <h2>The Boolean Egyptian</h2>
+        <h2>{{ category.name }}</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eius
            sit error incidunt, sequi quidem corrupti! Quas distinctio, ratione
             est corrupti
         </p>
         <div class="bom">
-          <h3> 74 major creators</h3>
-          <span>&rarr;</span>
-        </div>
-      </div>
-    </div>
-    <div class="main main2">
-      <div class="imgs">
-        <img src="../assets/Rectangle230.png" alt="">
-      </div>
-      <div class="exp">
-        <h2>The Boolean Egyptian</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eius
-           sit error incidunt, sequi quidem corrupti! Quas distinctio, ratione
-            est corrupti
-        </p>
-        <div class="bom">
-          <h3> 74 major creators</h3>
-          <span>&rarr;</span>
-        </div>
-      </div>
-    </div>
-    <div class="main main3">
-      <div class="imgs">
-        <img src="../assets/Rectangle23.png" alt="">
-      </div>
-      <div class="exp">
-        <h2>The Boolean Egyptian</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eius
-           sit error incidunt, sequi quidem corrupti! Quas distinctio, ratione
-            est corrupti
-        </p>
-        <div class="bom">
-          <h3> 74 major creators</h3>
+          <h3> 74 major creators</h3> 
           <span>&rarr;</span>
         </div>
       </div>
@@ -61,6 +35,14 @@
 export default {
   name: 'Main',
   props: {
+  },
+  computed: {
+    categories() {
+      const category = this.$store.getters.getProduct.featured_products
+      // const x = category.map(cat => cat.category)
+      // const xx = [...new Set(x)]
+      return category
+    },
   }
 }
 </script>
@@ -71,7 +53,6 @@ export default {
   position: relative;
   padding: 0;
   margin: 0;
-  z-index: -1;
   width: 100%;
 }
 
@@ -85,8 +66,31 @@ export default {
   position: relative;
   width: 100%;
   height: 253px;
-  background: blue;
 }
+.main .imgs .oppac{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* padding-right: 7em; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    transition: .3s;
+  }
+  .oppac h2{
+    color: white;
+    text-transform: capitalize;
+  }
+  .oppac button{
+    border: 1px solid #ccc;
+    padding: 14px 17px;
+    font-size: 24px;
+    color: white;
+    border-radius: 49.99%;
+  }
 .imgs img{
   position: absolute;
   left: 0; 
@@ -97,9 +101,43 @@ export default {
 .bdy .h2{
   padding: 17px;
 }
+.bdy .exp h2{
+  margin-bottom: 1.8em;
+  text-transform: capitalize;
+}
+.main .exp p{
+  margin-bottom: 2em;
+  line-height: 24px;
+  letter-spacing: .7px;
+}
+.exp .bom{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.exp .bom span{
+  border-radius: 49.99%;
+  padding: 20px 22px;
+  border: 1px solid #333;
+  font-size: 24px;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .bdy .exp h2{
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .bdy{
     padding: 3em;
+  }
+  .main .imgs .oppac{
+    display: none;
+  }
+  .main .imgs:hover .oppac{
+    display: flex;
   }
   .main{
     grid-template-columns: 1fr 1fr;
@@ -108,14 +146,6 @@ export default {
     padding: 3em 0;
   }
   
-  .main2 .imgs{
-    grid-column: 2;
-    padding: 4px;
-  }
-  .main2 .exp{
-    grid-column: 1;
-    grid-row: 1;
-  }
   .bdy .h2{
     position: relative;
     padding: 17px 0;
@@ -137,6 +167,9 @@ export default {
   }
   .bdy{
     padding: 4.9em;
+  }
+  .main .imgs .oppac{
+    flex-direction: row;
   }
 }
 

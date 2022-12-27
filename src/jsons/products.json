@@ -1,16 +1,55 @@
 {
   "featured_products": [
-    {
+    { 
       "id": "ftp1",
-      "url": "./assets/.jpg"
+      "name": "boolean egyptian",
+      "creator": "clearamane",
+      "origin": "made in italy",
+      "views": "1.9",
+      "category": "Editorials",
+      "year": "2022",
+      "price": {
+        "usd": 35.50,
+        "eth": 0.09
+      },
+      "size": { 
+        "ft": 200
+      },
+      "url": "./assets/Rectangle236.png"
     },
-    {
+    { 
       "id": "ftp2",
-      "url": "./assets/.jpg"
+      "name": "are we there yet",
+      "creator": "clearamane",
+      "origin": "made in italy",
+      "views": "1.9",
+      "category": "Editorials",
+      "year": "2022",
+      "price": {
+        "usd": 35.50,
+        "eth": 0.09
+      },
+      "size": { 
+        "ft": 200
+      },
+      "url": "./assets/Rectangle230.png"
     },
-    {
+    { 
       "id": "ftp3",
-      "url": "./assets/.jpg"
+      "name": "oloibiri 1997",
+      "creator": "clearamane",
+      "origin": "made in italy",
+      "views": "1.9",
+      "category": "Editorials",
+      "year": "2022",
+      "price": {
+        "usd": 35.50,
+        "eth": 0.09
+      },
+      "size": { 
+        "ft": 200
+      },
+      "url": "./assets/Rectangle23.png"
     }
   ],
   "products": [ 
@@ -26,7 +65,7 @@
         "usd": 35.50,
         "eth": 0.09
       },
-      "size": {
+      "size": { 
         "ft": 200
       },
       "url": "./assets/philomena.jpg"
@@ -302,6 +341,40 @@
         "ft": 200
       },
       "url": "./assets/Rectangle260.png"
+    },
+    { 
+      "id": "p20",
+      "name": "are we there yet",
+      "creator": "sanni",
+      "origin": "made in Libya",
+      "views": "1.9",
+      "category": "Editorials",
+      "year": "2022",
+      "price": {
+        "usd": 35.50,
+        "eth": 0.09
+      },
+      "size": { 
+        "ft": 200
+      },
+      "url": "./assets/Rectangle230.png"
+    },
+    { 
+      "id": "p21",
+      "name": "oloibiri 1997",
+      "creator": "sanni",
+      "origin": "made in Libya",
+      "views": "1.9",
+      "category": "Editorials",
+      "year": "2022",
+      "price": {
+        "usd": 35.50,
+        "eth": 0.09
+      },
+      "size": { 
+        "ft": 200
+      },
+      "url": "./assets/Rectangle23.png"
     }
   ]
 }

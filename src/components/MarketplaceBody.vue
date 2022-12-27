@@ -37,7 +37,6 @@ export default {
   computed: {
     myProducts() {
       return this.$store.getters.getProducts.slice(0,this.more)
-      // return this.prices()
     }
   },
   methods: {
@@ -49,23 +48,9 @@ export default {
         }
         if(this.more == len){
           const dell = document.getElementsByClassName('bun')[0].classList.add('del')
-          // console.log(dell.className) 
         }
         return  this.more += 4;
       },
-      // views() {
-      //   const len = this.$store.getters.getProducts
-      //   items.sort(function (a, b) {
-      //     return b.price.usd - a.price.usd;
-      //   });
-      // },
-      // prices() {
-      //   const len = this.$store.getters.getProducts
-      //   items.sort(function (a, b) {
-      //     return b.views - a.views;
-      //   });
-      // }
-     
   },
   mounted() {
     const len = this.$store.getters.getProducts
