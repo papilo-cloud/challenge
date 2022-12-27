@@ -26,7 +26,7 @@ export default {
     margin: 0;
     padding: 0;
     padding-top: 0;
-    z-index: -1;
+    /* z-index: -1; */
     margin-bottom: 4em;
   }
   .imgs{
@@ -49,6 +49,10 @@ export default {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-  
   }
+@media screen and (min-width: 608px) {
+  .slid{
+    display: none;
+  }
+}
 </style>

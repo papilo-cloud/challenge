@@ -74,13 +74,13 @@ export default {
 
   computed: {
     categories() {
-      const category = this.$store.getters.getProduct
+      const category = this.$store.getters.getProduct.products
       const x = category.map(cat => cat.category)
       const xx = [...new Set(x)]
       return xx
     },
     artists(){
-      const artist = this.$store.getters.getProduct
+      const artist = this.$store.getters.getProduct.products
       const y = artist.map(cat => cat.creator)
       const yy = [...new Set(y)]
       return yy
@@ -88,13 +88,13 @@ export default {
     },
     years() {
       this.$store.state.pick = this.pick
-      const year = this.$store.getters.getProduct
+      const year = this.$store.getters.getProduct.products
       const x = year.map(cat => cat.year)
       const xx = [...new Set(x)]
       return xx
     },
     prices() {
-      const price = this.$store.getters.getProduct
+      const price = this.$store.getters.getProduct.products
       const x = price.map(cat => cat.price.usd)
       const xx = [...new Set(x)]
       return xx

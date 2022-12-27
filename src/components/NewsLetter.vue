@@ -103,6 +103,7 @@ export default {
   }
   .news footer .foot p{
     text-transform: capitalize;
+    font-size: 12px;
   }
  
   @media screen and (min-width: 768px) {
@@ -131,6 +132,9 @@ export default {
       display: flex;
       gap: 10px;
     }
+    .news footer .foot p{
+    font-size: 17px;
+  }
   }
   .main p{
     text-transform: uppercase;

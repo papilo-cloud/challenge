@@ -11,6 +11,7 @@
       </p>
     </div> 
     <slider />
+    <slider-desk />
     <Main />
     <div class="bottom">
       <p class="desk desk1">
@@ -47,7 +48,7 @@
         <span>
           Explore Marketplace
         </span> 
-        <span>
+        <span> 
           <router-link to="/marketplace">&rarr;</router-link>
         </span>
       </p>
@@ -70,10 +71,11 @@
 import Main from '@/components/Main.vue';
 import Slider from '../components/Slider.vue';
 import NewsLetter from '../components/NewsLetter.vue';
+import SliderDesk from '../components/SliderDesk.vue';
 
 export default {
     name: "HomeView",
-    components: { Main, Slider, NewsLetter },
+    components: { Main, Slider, NewsLetter, SliderDesk },
 }
 </script>
 <style scoped>
