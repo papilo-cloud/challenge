@@ -8,7 +8,7 @@
         flip through more than 10,000 vintage shots old Photography, historic 
         images and capture seamlessly in one place. register to get top 
         access.
-      </p>
+      </p> 
     </div> 
     <slider />
     <slider-desk />
@@ -61,6 +61,33 @@
         </span>
       </p>
     </div>
+    <div class="week">
+      <div class="msg">
+        <h2>top creators of the week</h2>
+        <ul>
+          <li>editorials</li>
+          <li>fashion</li>
+          <li>lifestyle</li>
+          <li>blueprint</li>
+        </ul>
+      </div>
+      <div class="text">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Nemo non ad officiis quasi qui reprehenderit aliquam suscipit sunt,
+          error obcaecati molestias distinctio dolorem officia earum
+          eveniet dicta numquam fugit dignissimos.
+          amet consectetur adipisicing elit.
+          Nemo non ad officiis quasi qui reprehenderit aliquam suscipit sunt,
+          error obcaecati molestias distinctio dolorem officia earum
+          eveniet dicta numquam fugit dignissimos.
+        </p>
+       
+      </div>
+      <div class="pics">
+          <img src="../assets/Rectangle299.png" alt="299">
+      </div>
+        <!-- r t t g f v  -->
+    </div>
     <news-letter />
   </div>
 </template>
@@ -84,7 +111,7 @@ export default {
     z-index: -1;
   }
   .head{
-    position: relative;
+    position: relative; 
     text-align: center;
     padding: 30px;
     line-height: 28px;
@@ -104,7 +131,7 @@ export default {
     z-index: -1;
     background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(39, 87%, 65%));
   }
-  .bottom .pic{
+  .bottom .s{
     position: relative;
     width: 100%;
     height: 100%;
@@ -231,6 +258,7 @@ export default {
     position: relative;
     width: 100%;
     /* padding: 20px 7px; */
+    margin-bottom: 2em;
   } 
   .exp a{
     color: inherit;
@@ -257,10 +285,69 @@ export default {
   .exp p:nth-child(2){
     border-bottom: 2px solid #ccc;
   }
+  .week{
+    position: relative;
+    background: #bbb;
+    width: 100%;
+    border: 0vh;
+    height: 60vh;
+    padding: 20px;
+    margin-bottom: 2em;
+  }
+  .week .msg{
+    margin-bottom: 2em;
+  }
+  .week .msg h2{
+    text-transform: uppercase;
+  }
+  .week .msg ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    padding-left: 17px;
+  }
+  .week .msg ul li{
+    position: relative;
+    text-transform: capitalize;
+  }
+  .week .text{
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+  .week .pics{
+    position: absolute;
+    height: 37vh;
+    width: 300px;
+    bottom: 0;
+    left: 49%;
+    transform: translateX(-49%);
+  }
+  .week .pics img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+  }
+ 
   
 @media screen and (max-width: 768px) {
   .bottom .desk{
     display: none;
+  }
+  .week .msg ul li::before{
+    position: absolute;
+    content: '';
+    left: -14px;
+    width: 10px;
+    height: 10px;
+    bottom: 4px;
+    background: #000;
+    border-radius: 49.99%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -289,6 +376,29 @@ export default {
   .exp p{
     padding: 1em 2em;
   }
+  .week .msg{
+    display: flex;
+    justify-content: space-between;
+  }
+  .week .msg ul{
+    flex-direction: column;
+    gap: 12px;
+  }
+  .week .msg ul::before, .week .msg ul::after{
+    position: absolute;
+    content: '';
+    width: 4.9px;
+    height: 100%;
+    background: #888;
+    border-radius: 10px;
+    left: 0;
+  }
+  .week .msg ul::after{
+    height: 30px;
+    bottom: 0;
+    background: #222;
+  }
+  
 }
 @media screen and (min-width: 1000px) {
   .bottom{
@@ -302,6 +412,7 @@ export default {
   .exp p{
     padding: 1em 3em;
   }
+
 }
 </style>
  

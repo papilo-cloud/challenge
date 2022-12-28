@@ -61,7 +61,6 @@
           <!-- <product-details /> -->
       </div>
     </div>
-        <!-- r t t g f v  -->
   </div>
 </template>
 <script>

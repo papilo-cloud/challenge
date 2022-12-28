@@ -1,9 +1,11 @@
 <template>
   <section class="slide">
     <p>Here's an overiew of products actively on auction, explore! </p>
-    <Splide :options="options" class="splide">
+    <Splide :options="options">
       <SplideSlide v-for="(img, i) in slide.products " :key="i">
-        <img :src="img.url" :alt="img.id">
+        <router-link :to="{ name: 'LiveBids', params: { name: img.id } }">
+          <img :src="img.url" :alt="img.id">
+        </router-link>
       </SplideSlide>
     </Splide>
   </section>
@@ -20,15 +22,11 @@ export default {
             options: {
               rewind: true,
               gap : '1rem',
-              // height : '18rem',
-              autoplay:true ,
               pagination: false ,
               drag: true,
               type: 'loop',
               perPage: 2,
               interval: 2000,
-              // pauseOnHover: true,
-              // isNavigation: true,
               breakpoints: {
                 768: {
                   perPage: 1
@@ -38,9 +36,6 @@ export default {
             }
         };
     },
-    mounted() {
-        // console.log(this.slider.bids);
-    },
 }
 </script>
  
@@ -49,13 +44,6 @@ export default {
   img{
     height: 200px;
     width: 100%;
-    z-index: -1;
-  }
-  .splide{
-    z-index: 10000;
-  }
-  .slide{
-    margin-bottom: 3em;
   }
   .slide p{
     padding: 0 7px;
