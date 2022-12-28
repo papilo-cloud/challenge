@@ -83,8 +83,9 @@
         </p>
        
       </div>
+      <!-- for the image animation -->
       <div class="pics">
-          <img src="../assets/Rectangle299.png" alt="299">
+        <h2>Circa <br> <span>1985</span></h2>
       </div>
         <!-- r t t g f v  -->
     </div>
@@ -325,13 +326,32 @@ export default {
     bottom: 0;
     left: 49%;
     transform: translateX(-49%);
+    background-image: url('../assets/Rectangle299.png');
+    /* background-position-x: 0;
+    background-position-y: 0; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: anim 24s linear infinite;
   }
-  .week .pics img{
+
+  @keyframes anim{
+    0%{background-image: url('../assets/Rectangle299.png');}
+    33.33%{background-image: url('../assets/Rectangle300.png'); }
+    66.66%{background-image: url('../assets/Rectangle301.png'); }
+
+  }
+  .week .pics h2{
     position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
+    right: -20%;
+    bottom: 49px;
+    font-size: 37px;
+    color: #222;
+    text-transform: uppercase;
+    z-index: -1;
+  }
+  .week .pics h2 span{
+    text-decoration: line-through;
+    font-size: 2em;
   }
  
   
@@ -343,10 +363,10 @@ export default {
     position: absolute;
     content: '';
     left: -14px;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     bottom: 4px;
-    background: #000;
+    background: #222;
     border-radius: 49.99%;
   }
 }
@@ -376,6 +396,10 @@ export default {
   .exp p{
     padding: 1em 2em;
   }
+  .week{
+    height: 70vh;
+  }
+  
   .week .msg{
     display: flex;
     justify-content: space-between;
@@ -398,7 +422,13 @@ export default {
     bottom: 0;
     background: #222;
   }
-  
+  .week .pics{
+    height: 49vh;
+    width: 400px;
+  }
+  .week .pics h2{
+    right: -40%;
+  }
 }
 @media screen and (min-width: 1000px) {
   .bottom{
@@ -412,7 +442,13 @@ export default {
   .exp p{
     padding: 1em 3em;
   }
-
+  .week .pics{
+    height: 64vh;
+    width: 600px;
+  }
+  .week .pics h2{
+    right: -40%;
+  }
 }
 </style>
  
