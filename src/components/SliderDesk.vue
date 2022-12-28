@@ -46,7 +46,7 @@ export default {
 
 <style scoped>
 .slide{
-  /* display: none; */
+  display: none;
 }
 img{
     height: 230px;

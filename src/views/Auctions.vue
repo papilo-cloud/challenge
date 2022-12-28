@@ -18,7 +18,6 @@ export default {
   .aucn{
     position: relative;
     margin-top: 7em;
-    z-index: -1;
   }
   
 </style>

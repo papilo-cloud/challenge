@@ -23,7 +23,17 @@
             est corrupti
         </p>
         <div class="bom">
-          <h3> 74 major creators</h3> 
+           <div class="image">
+            <div class="img">
+              <img src="../assets/ian-dooley.jpg" alt="dooley">
+              <img src="../assets/michael.jpg" alt="michael">
+              <img src="../assets/matheus-ferrero.jpg" alt="matheus">
+              <img src="../assets/joseph-gonzalez.jpg" alt="gonzalez">
+              <img src="../assets/christopher.jpg" alt="christopher">
+
+            </div>
+            <h3> 64 major creators</h3>
+           </div>
           <span>&rarr;</span>
         </div>
       </div>
@@ -117,6 +127,39 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
+.bom .image{
+  position: relative;
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .bom .i */
+.bom .image .img{
+  position: relative;
+  height: 40px;
+  width: 150px;
+}
+.bom .image .img img{
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  /* object-fit: contain; */
+  border-radius: 49.99%;
+  border: 1px solid #ccc;
+}
+.bom .image .img img:nth-child(5){
+  left: 88px;
+}
+.bom .image .img img:nth-child(4){
+  left: 67px;
+}
+.bom .image .img img:nth-child(3){
+  left: 44px;
+}
+.bom .image .img img:nth-child(2){
+  left: 22px;
+}
 .exp .bom span{
   border-radius: 49.99%;
   padding: 20px 22px;
@@ -127,6 +170,13 @@ export default {
 @media screen and (max-width: 768px) {
   .bdy .exp h2{
     display: none;
+  } 
+  .exp .bom span{
+    display: none;
+  }
+  .bom .image{
+  border-bottom: 1px solid #000;
+    padding-bottom: 1em;
   }
 }
 @media screen and (min-width: 768px) {
