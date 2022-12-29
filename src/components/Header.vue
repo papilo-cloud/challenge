@@ -15,7 +15,7 @@
           X
         </button>
       </div> 
-      <ul>
+      <ul> 
         <li>
           <router-link to="/">Home</router-link>
         </li>
@@ -95,6 +95,9 @@ export default {
     left: 0;
     bottom: -4px;
     background: #2c3e50;
+  }
+  .iconc button img{
+    width: 10px;
   }
   /* .mobile a {
     color: #42b983;

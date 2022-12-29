@@ -2,15 +2,117 @@
   "products": [
     {
       "id": "0",
-      "url": "./assets/Rectangle247.png"
+      "tag": "Lost or wither",
+      "bid": 4300,
+      "url": "./assets/Rectangle247.png",
+      "bids": [
+        {
+        "name": " joseph-gonzalez",
+        "comment": "$43.00",
+        "pic": "./assets/joseph-gonzalez.jpg"
+        },
+        {
+        "name": " matheus- ferrero",
+        "comment": "i love this, $20.00 for me",
+        "pic": "./assets/matheus-ferrero.jpg"
+        },
+        {
+        "name": " jurica koletic",
+        "comment": "$43.00 instant bid",
+        "pic": "./assets/jurica-koletic.jpg"
+        },
+        {
+        "name": " michael",
+        "comment": "instant bid",
+        "pic": "./assets/michael.jpg"
+        },
+        {
+        "name": " albert",
+        "comment": "tight bid",
+        "pic": "./assets/albert.jpg"
+        },
+        {
+        "name": "christopher",
+        "comment": "i love this, $20.00 for me",
+        "pic": "./assets/christopher.jpg"
+        }
+      ]
     },
     {
       "id": "1",
-      "url": "./assets/Rectangle245.png" 
+      "bid": 2900,
+      "tag": "Falling apart",
+      "url": "./assets/Rectangle245.png",
+      "bids": [
+        {
+        "name": " joseph-gonzalez",
+        "comment": "$43.00",
+        "pic": "./assets/joseph-gonzalez.jpg"
+        },
+        {
+        "name": " matheus- ferrero",
+        "comment": "i love this, $20.00 for me",
+        "pic": "./assets/matheus-ferrero.jpg"
+        },
+        {
+        "name": " jurica koletic",
+        "comment": "$43.00 instant bid",
+        "pic": "./assets/jurica-koletic.jpg"
+        },
+        {
+        "name": " michael",
+        "comment": "instant bid",
+        "pic": "./assets/michael.jpg"
+        },
+        {
+        "name": " albert",
+        "comment": "tight bid",
+        "pic": "./assets/albert.jpg"
+        },
+        {
+        "name": "christopher",
+        "comment": "i love this, $20.00 for me",
+        "pic": "./assets/christopher.jpg"
+        }
+      ]
     },
     {
       "id": "2",
-      "url": "./assets/Rectangle246.png"
+      "bid": 3800,
+      "tag": "Out of the box",
+      "url": "./assets/Rectangle246.png",
+      "bids": [
+        {
+        "name": " joseph-gonzalez",
+        "comment": "$43.00",
+        "pic": "./assets/joseph-gonzalez.jpg"
+        },
+        {
+        "name": " matheus- ferrero",
+        "comment": "i love this, $20.00 for me",
+        "pic": "./assets/matheus-ferrero.jpg"
+        },
+        {
+        "name": " jurica koletic",
+        "comment": "$43.00 instant bid",
+        "pic": "./assets/jurica-koletic.jpg"
+        },
+        {
+        "name": " michael",
+        "comment": "instant bid",
+        "pic": "./assets/michael.jpg"
+        },
+        {
+        "name": " albert",
+        "comment": "tight bid",
+        "pic": "./assets/albert.jpg"
+        },
+        {
+        "name": "christopher",
+        "comment": "i love this, $20.00 for me",
+        "pic": "./assets/christopher.jpg"
+        }
+      ]
     }
   ],
   "bids": [

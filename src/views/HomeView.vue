@@ -38,11 +38,11 @@
       <div class="desk desk2">
         <div class="slide"><span></span></div>
         <div class="but">
-          <button>l</button>
-          <button>r</button>
+          <button><img src="../assets/icon-arrow-left.svg" alt="left"></button>
+          <button><img src="../assets/icon-arrow-right.svg" alt="right"></button>
         </div>
       </div>
-    </div>
+    </div> 
     <div class="exp">
       <p>
         <span>
@@ -83,11 +83,11 @@
         </p>
        
       </div>
+      
       <!-- for the image animation -->
-      <div class="pics">
+      <div class="circa">
         <h2>Circa <br> <span>1985</span></h2>
       </div>
-        <!-- r t t g f v  -->
     </div>
     <news-letter />
   </div>
@@ -131,21 +131,16 @@ export default {
     overflow: hidden;
     z-index: -1;
     background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(39, 87%, 65%));
+    background: red;
   }
-  .bottom .s{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    
-  }
-  .pic img{
+  .bottom .pic img{
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
   }
-  .pic .mes{
+  .bottom .pic .mes{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -221,7 +216,7 @@ export default {
     bottom: 12px;
   }
   .bottom .desk2{
-    padding: 1px 0;
+    padding: 1px 0;                                                                          
     padding: 1% 0;
     display: flex;
     align-items: center;
@@ -291,7 +286,7 @@ export default {
     background: #bbb;
     width: 100%;
     border: 0vh;
-    height: 60vh;
+    height: 70vh;
     padding: 20px;
     margin-bottom: 2em;
   }
@@ -312,6 +307,7 @@ export default {
   }
   .week .msg ul li{
     position: relative;
+    font-size: 12px;
     text-transform: capitalize;
   }
   .week .text{
@@ -319,7 +315,8 @@ export default {
     width: 100%;
     margin: 0;
   }
-  .week .pics{
+  
+  .week .circa{
     position: absolute;
     height: 37vh;
     width: 300px;
@@ -340,22 +337,23 @@ export default {
     66.66%{background-image: url('../assets/Rectangle301.png'); }
 
   }
-  .week .pics h2{
+  .week .circa h2{
     position: absolute;
-    right: -20%;
+    /* right: -20px; */
+    right: 0;
     bottom: 49px;
     font-size: 37px;
     color: #222;
     text-transform: uppercase;
     z-index: -1;
   }
-  .week .pics h2 span{
+  .week .circa h2 span{
     text-decoration: line-through;
     font-size: 2em;
   }
  
   
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .bottom .desk{
     display: none;
   }
@@ -408,6 +406,9 @@ export default {
     flex-direction: column;
     gap: 12px;
   }
+  .week .msg ul li{
+    font-size: unset;
+  }
   .week .msg ul::before, .week .msg ul::after{
     position: absolute;
     content: '';
@@ -422,11 +423,11 @@ export default {
     bottom: 0;
     background: #222;
   }
-  .week .pics{
+  .week .circa{
     height: 49vh;
     width: 400px;
   }
-  .week .pics h2{
+  .week .circa h2{
     right: -40%;
   }
 }
