@@ -84,7 +84,7 @@ export default {
   .cont .image{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     margin: 0;
     /* margin-bottom: 1em; */
     padding: 0;
