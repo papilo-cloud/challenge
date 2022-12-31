@@ -31,9 +31,9 @@ export default createStore({
   },
   mutations: {
     loadStore(state) {
-			if(localStorage.getItem('stppp')) {
+			if(localStorage.getItem('store')) {
         this.replaceState(
-        Object.assign(state, JSON.parse(localStorage.getItem('stor'))));
+        Object.assign(state, JSON.parse(localStorage.getItem('store'))));
       }
 		},
     ADD_TO_CART(state, payload){
