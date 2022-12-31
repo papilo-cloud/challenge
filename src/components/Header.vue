@@ -5,7 +5,7 @@
       <img src="../assets/icon-menu.svg" alt="menu">
      </button>
     </div>
-    <div class="lo">
+    <div class="logo">
       <h2>ARTSY.</h2> 
     </div>
     <nav class="mobile">
@@ -15,7 +15,7 @@
           X
         </button>
       </div> 
-      <ul> 
+      <ul @click="butn2"> 
         <li>
           <router-link to="/">Home</router-link>
         </li>
@@ -30,10 +30,15 @@
         </li>
       </ul> 
     </nav>
-    <div class="icons">
-      <button><img src="../assets/icon-search.svg" alt="search"></button>
-      <button><img src="../assets/icon-cart.svg" alt="cart"></button>
-    </div>
+    <ul class="icons">
+          <li><img src="../assets/icon-search.svg" alt="search"></li>
+        <li>
+          <router-link to="/marketplace/Cart/all/shopping">
+            <img src="../assets/icon-cart.svg" alt="cart">
+          </router-link>
+        </li>
+        <li>B</li>
+    </ul>
   </header>
 </template>
 
@@ -62,9 +67,15 @@ export default {
     padding: 20px;
     background: white;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     z-index: 10000000;
+  }
+  .head .logo{
+    flex: 1;
+  }
+  .head .menu{
+    flex: 1;
   }
   .mobile{
     position: relative;
@@ -84,7 +95,7 @@ export default {
     padding: 0;
     list-style: none; 
   }
-  ul li {
+  .mobile ul li {
     margin-right: 20px;
   }
   .mobile a.router-link-exact-active::before{
@@ -96,22 +107,33 @@ export default {
     bottom: -4px;
     background: #2c3e50;
   }
-  .iconc button img{
-    width: 10px;
+  .icons{
+    position: relative;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+  .icons li img{
+    width: 20px;
   }
   /* .mobile a {
     color: #42b983;
   } */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .mobile{
     /* display: none; */
     position: fixed;
-    width: 80%;
+    width: 100%;
     top: 0;
     height: 100%;
     left: -100%;
-    background: plum;
+    background: #fff;
     padding: 20px 30px;
     text-align: left;
     transition: .3s;
@@ -133,9 +155,12 @@ export default {
   .mobile ul{
     flex-direction: column;
   }
-  ul li {
+  .mobile ul li {
     margin-right: 0;
     margin-bottom: 2em;
+  }
+  .icons li:nth-child(3){
+    display: none;
   }
   .show{
     left: 0;

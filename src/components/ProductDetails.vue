@@ -16,13 +16,13 @@
           <p>Total views:  {{ detail.views}}K </p>
         </div>
         <div class="bun">
-          <button>-</button>
-          <span>2</span>
-          <button>+</button>
+          <button @click="itemNumDel(detail.id)">-</button>
+          <span>{{ detail.item }}</span>
+          <button @click="itemNumAdd(detail.id)">+</button>
         </div>
         <div class="add">
-        <router-link :to="{ name: 'Cart', params: { name: detail.name } }">
-          <button>Add to cart</button>
+        <router-link :to="{ name: 'ShoppingCart', params: { name: detail.name } }">
+          <button @click="addToCart(detail)">Add to cart</button>
         </router-link>
           <button>
             <span></span>
@@ -62,21 +62,32 @@ export default {
   components: { Cat },
   data() { 
     return{
-      detailedImg:[],
       id:this.$route.params.name,
     }
   },
   computed: {
     detailed() {
       const detail =  this.$store.getters.getProducts.filter( x => x.name == this.id)
-      console.log(detail)
       return detail
     }
   },
   methods: {
+    // Method for displaying 
     shows() {
       document.getElementsByClassName('lorem')[0].classList.toggle('show')
-      // console.log(x.className)
+    },
+
+    // Method for adding data to our cart via vuex
+    addToCart(data){
+      this.$store.dispatch('addToCart', data)
+    },
+
+    // Methods for adding and deleting the number of items in the cart respectively
+    itemNumAdd(id){
+      this.$store.dispatch('addItemsNum', id)
+    },
+    itemNumDel(id){
+      this.$store.dispatch('delItemsNum',id)
     }
   }
 } 
