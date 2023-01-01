@@ -131,7 +131,11 @@ export default {
     overflow: hidden;
     z-index: -1;
     background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(39, 87%, 65%));
-    background: red;
+  }
+  .bottom .pic {
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
   .bottom .pic img{
     position: absolute;

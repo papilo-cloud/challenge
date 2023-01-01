@@ -6,6 +6,9 @@ import Drops from '../views/Drops.vue'
 import ProductDetails from '../components/ProductDetails.vue'
 import Cart from '../components/Cart.vue'
 import LiveBids from '../components/LiveBids.vue'
+import ShippingDetails from '../components/ShippingDetails.vue'
+import ShoppingCart from '../components/ShoppingCart.vue'
+import PaymentDetails from '../components/PaymentDetails.vue'
 
 const routes = [
   {
@@ -26,8 +29,39 @@ const routes = [
   {
     path: '/marketplace/Cart/:name', 
     name:'Cart',
-    component: Cart
+    component: Cart,
+    children: [
+      {
+        path: 'shopping',
+        name:'ShoppingCart',
+        component: ShoppingCart
+      },
+      {
+        path: 'shipping',
+        name:'ShippingCart',
+        component: ShippingDetails
+      },
+      {
+        path: 'payment',
+        component: PaymentDetails
+      },
+    ]
   },
+  // {
+  //   path: '/marketplace/Cart/all/shopping', 
+  //   name:'ShoppingCart',
+  //   component: ShoppingCart
+  // },
+  // {
+  //   path: '/marketplace/Cart/all/shipping', 
+  //   name:'ShippingDetails',
+  //   component: ShippingDetails
+  // },
+  // {
+  //   path: '/marketplace/Cart/all/payment', 
+  //   name:'PaymentDetails',
+  //   component: PaymentDetails
+  // },
   {
     path: '/auctions',
     name: 'Auctions',

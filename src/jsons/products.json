@@ -54,13 +54,15 @@
   ],
   "products": [ 
     { 
-      "id": "p1",
+      "id": "1",
       "name": "philomena '22",
       "creator": "clearamane",
       "origin": "made in italy",
       "views": "1.9",
       "category": "Editorials",
       "year": "2022",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 35.50,
         "eth": 0.09
@@ -71,13 +73,15 @@
       "url": "./assets/philomena.jpg"
     },
     {
-      "id": "p2",
+      "id": "2",
       "name": "boolean egyptian",
       "creator": "ali dawa",
       "origin": "made in italy",
       "views": "2.7",
       "category": "Optics",
       "year": "2021",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 2.28,
         "eth": 0.09
@@ -88,13 +92,15 @@
       "url": "./assets/Rectangle236.png"
     },
     {
-      "id": "p3",
+      "id": "3",
       "name": "blanc",
       "creator": "ali dawa",
       "origin": "made in italy",
       "views": "3.2",
       "category": "Editorials",
       "year": "2021",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 7.80,
         "eth": 0.09
@@ -105,13 +111,15 @@
       "url": "./assets/blanc.jpg"
     },
     {
-      "id": "p4",
+      "id": "4",
       "name": "ellipsia",
       "creator": "clearamane",
       "origin": "made in italy",
       "views": "3.2",
       "category": "Optics",
       "year": "2021",
+      "item": 2,
+      "liked": false,
       "price": {
         "usd": 36.22,
         "eth": 0.09
@@ -122,13 +130,15 @@
       "url": "./assets/ellipsia.jpg"
     },
     {
-      "id": "p5",
+      "id": "5",
       "name": "the lawmakers",
       "creator": "ali dawa",
       "origin": "made in italy",
       "views": "2.98",
       "category": "Editorials",
       "year": "2000",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 4.00,
         "eth": 0.09
@@ -139,13 +149,15 @@
       "url": "./assets/lawmakers.jpg"
     },
     {
-      "id": "p6",
+      "id": "6",
       "name": "veil",
       "creator": "ali dawa",
       "origin": "made in italy",
       "views": "4.9",
       "category": "Editorials",
       "year": "2022",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 20.34,
         "eth": 0.09
@@ -156,7 +168,7 @@
       "url": "./assets/veil.jpg"
     },
     {
-      "id": "p7",
+      "id": "7",
       "name": "alternating",
       "creator": "ali dawa",
       "origin": "made in italy",
@@ -173,13 +185,15 @@
       "url": "./assets/alternating.jpg"
     },
     {
-      "id": "p8",
+      "id": "8",
       "name": "rosemary '22",
       "creator": "ali dawa",
       "origin": "made in italy",
       "views": "4.1",
       "category": "Art & Museum",
       "year": "2022",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 29.99,
         "eth": 0.09
@@ -190,7 +204,7 @@
       "url": "./assets/rosemary.jpg"
     },
     {
-      "id": "p9",
+      "id": "9",
       "name": "beverly",
       "creator": "ali dawa",
       "origin": "made in italy",
@@ -207,13 +221,15 @@
       "url": "./assets/beverly.jpg"
     },
     {
-      "id": "p10",
+      "id": "10",
       "name": "sassy",
       "creator": "ali dawa",
       "origin": "made in italy",
       "views": "3.3",
       "category": "Nature",
       "year": "2022",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 18.29,
         "eth": 3.20
@@ -224,13 +240,15 @@
       "url": "./assets/Rectangle254.png"
     },
     {
-      "id": "p11",
+      "id": "11",
       "name": "escape",
       "creator": "ali dawa",
       "origin": "made in italy",
       "views": "1.94",
       "category": "Nature",
       "year": "2020",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 14.40,
         "eth": 0.03
@@ -241,13 +259,15 @@
       "url": "./assets/escape.jpg"
     },
     {
-      "id": "p12",
+      "id": "12",
       "name": "unknown",
       "creator": "ali dawa",
       "origin": "made in italy",
       "views": "5.0",
       "category": "Nature",
       "year": "2020",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 17.00,
         "eth": 0.49
@@ -258,13 +278,15 @@
       "url": "./assets/unknown.jpg"
     },
     {
-      "id": "p13",
+      "id": "13",
       "name": "wrapped '99",
       "creator": "ali dawa",
       "origin": "made in italy",
       "views": "5.4",
       "category": "fashion",
       "year": "2020",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 31.90,
         "eth": 0.09
@@ -275,13 +297,15 @@
       "url": "./assets/warped.jpg"
     },
     {
-      "id": "p14",
+      "id": "14",
       "name": "ellipsias",
       "creator": "ali dawa",
       "origin": "made in italy",
       "views": "2.57",
       "category": "fashion",
       "year": "2010",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 39.90,
         "eth": 0.09
@@ -292,13 +316,15 @@
       "url": "./assets/ellipsias.jpg"
     },
     {
-      "id": "p17",
+      "id": "15",
       "name": "mono",
       "creator": "sanni",
       "origin": "made in Libya",
       "views": "6.97",
       "category": "fashion",
       "year": "2010",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 46.10,
         "eth": 0.11
@@ -309,13 +335,15 @@
       "url": "./assets/Rectangle256.png"
     },
     {
-      "id": "p18",
+      "id": "16",
       "name": "hello",
       "creator": "sanni",
       "origin": "made in Libya",
       "views": "6.2",
       "category": "Optics",
       "year": "2010",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 62.00,
         "eth": 0.07
@@ -326,13 +354,15 @@
       "url": "./assets/Rectangle258.png"
     },
     {
-      "id": "p19",
+      "id": "17",
       "name": "Rectangle",
       "creator": "clearamane",
       "origin": "made in italy",
       "views": "2.17",
       "category": "Optics",
       "year": "2000",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 45.34,
         "eth": 0.19
@@ -343,13 +373,15 @@
       "url": "./assets/Rectangle260.png"
     },
     { 
-      "id": "p20",
+      "id": "18",
       "name": "are we there yet",
       "creator": "sanni",
       "origin": "made in Libya",
       "views": "1.9",
       "category": "Editorials",
       "year": "2022",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 35.50,
         "eth": 0.09
@@ -360,13 +392,15 @@
       "url": "./assets/Rectangle230.png"
     },
     { 
-      "id": "p21",
+      "id": "19",
       "name": "oloibiri 1997",
       "creator": "sanni",
       "origin": "made in Libya",
       "views": "1.9",
       "category": "Editorials",
       "year": "2022",
+      "item": 1,
+      "liked": false,
       "price": {
         "usd": 35.50,
         "eth": 0.09
